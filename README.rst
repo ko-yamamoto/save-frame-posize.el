@@ -42,7 +42,7 @@ And this add to init.el
 
 ::
 
-   (require 'win-pos)
+   (require 'save-frame-posize)
 
 
 First Launch  初回起動
