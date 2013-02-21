@@ -47,9 +47,9 @@
   (switch-to-buffer "*sfps*")
   ;; 位置とサイズをバッファに書き込み
   (with-output-to-temp-buffer "*sfps*"
-    (princ (window-height)) ; ウィンドウ高さ
+    (princ (frame-height)) ; ウィンドウ高さ
     (princ sfps-delimiter) ; デリミタ
-    (princ (window-width)) ; ウィンドウ幅
+    (princ (frame-width)) ; ウィンドウ幅
     (princ sfps-delimiter) ; デリミタ
     (princ (assoc-default 'left (frame-parameters (selected-frame)))) ; ウィンドウX位置
     (princ sfps-delimiter) ; デリミタ

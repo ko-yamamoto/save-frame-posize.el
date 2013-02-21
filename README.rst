@@ -52,7 +52,7 @@ win-pos.el needs .winposize file that save frame size and position.
 So, you run "rwps-save-when-kill-emacs" for creating .winposize.
 
 win-pos.el はフレームサイズと位置の保存に .winposize ファイルを必要とします。
- 
+
 
 
 
@@ -82,6 +82,10 @@ TODO
 
 ChangeLog
 ----------------------------------
+
++ 0.03
+
+   フレームサイズを利用するよう変更
 
 + 0.02
 
