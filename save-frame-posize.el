@@ -60,7 +60,7 @@
     (write-region (point-min) (point-max) sfps-save-file))
   ;; バッファ削除
   (kill-buffer "*sfps*")
-)
+  )
 
 ;; 開始時にウインドウの位置とサイズを読み込み
 (defun sfps-restore-when-start-emacs ()
@@ -75,7 +75,7 @@
     ;; カンマでスプリットしてリストへ変換
     (let ((sfps-posize-list (split-string sfps-posize-str sfps-delimiter)))
       ;; 縦幅セット (ミニバッファ分の 1 を足す)
-      (set-frame-height (selected-frame) (+ 1 (string-to-number (nth 0 sfps-posize-list))))
+      (set-frame-height (selected-frame) (string-to-number (nth 0 sfps-posize-list)))
       ;; 横幅セット
       (set-frame-width (selected-frame) (string-to-number (nth 1 sfps-posize-list)))
       ;; 座標セット
